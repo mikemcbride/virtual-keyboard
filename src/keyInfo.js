@@ -10,79 +10,93 @@ export default [
       label: 'esc',
       size: 1.4,
       keyCode: 27,
-      location: 0
+      location: 0,
+      align: 'left',
+      font: 'small'
     },
     {
       label: 'F1',
       size: 1,
       keyCode: 112,
-      location: 0
+      location: 0,
+      font: 'small'
     },
     {
       label: 'F2',
       size: 1,
       keyCode: 113,
-      location: 0
+      location: 0,
+      font: 'small'
     },
     {
       label: 'F3',
       size: 1,
       keyCode: 114,
-      location: 0
+      location: 0,
+      font: 'small'
     },
     {
       label: 'F4',
       size: 1,
       keyCode: 115,
-      location: 0
+      location: 0,
+      font: 'small'
     },
     {
       label: 'F5',
       size: 1,
       keyCode: 116,
-      location: 0
+      location: 0,
+      font: 'small'
     },
     {
       label: 'F6',
       size: 1,
       keyCode: 117,
-      location: 0
+      location: 0,
+      font: 'small'
     },
     {
       label: 'F7',
       size: 1,
       keyCode: 118,
-      location: 0
+      location: 0,
+      font: 'small'
     },
     {
       label: 'F8',
       size: 1,
       keyCode: 119,
-      location: 0
+      location: 0,
+      font: 'small'
     },
     {
       label: 'F9',
       size: 1,
       keyCode: 120,
-      location: 0
+      location: 0,
+      font: 'small'
     },
     {
       label: 'F10',
       size: 1,
       keyCode: 121,
-      location: 0
+      location: 0,
+      font: 'small'
     },
     {
       label: 'F11',
       size: 1,
       keyCode: 122,
-      location: 0
+      location: 0,
+      font: 'small'
     },
     {
       label: 'F12',
       size: 1,
       keyCode: 123,
-      location: 0
+      location: 0,
+      font: 'small'
     }
   ],
   // numeric keys
@@ -169,7 +183,9 @@ export default [
       label: 'delete',
       size: 1.7,
       keyCode: 8,
-      location: 0
+      location: 0,
+      align: 'right',
+      font: 'small'
     },
   ],
   // qwerty
@@ -178,64 +194,66 @@ export default [
       label: 'tab',
       size: 1.6,
       keyCode: 9,
-      location: 0
+      location: 0,
+      align: 'left',
+      font: 'small'
     },
     {
-      label: 'q',
+      label: 'Q',
       size: 1,
       keyCode: 81,
       location: 0
     },
     {
-      label: 'w',
+      label: 'W',
       size: 1,
       keyCode: 87,
       location: 0
     },
     {
-      label: 'e',
+      label: 'E',
       size: 1,
       keyCode: 69,
       location: 0
     },
     {
-      label: 'r',
+      label: 'R',
       size: 1,
       keyCode: 82,
       location: 0
     },
     {
-      label: 't',
+      label: 'T',
       size: 1,
       keyCode: 84,
       location: 0
     },
     {
-      label: 'y',
+      label: 'Y',
       size: 1,
       keyCode: 89,
       location: 0
     },
     {
-      label: 'u',
+      label: 'U',
       size: 1,
       keyCode: 85,
       location: 0
     },
     {
-      label: 'i',
+      label: 'I',
       size: 1,
       keyCode: 73,
       location: 0
     },
     {
-      label: 'o',
+      label: 'O',
       size: 1,
       keyCode: 79,
       location: 0
     },
     {
-      label: 'p',
+      label: 'P',
       size: 1,
       keyCode: 80,
       location: 0
@@ -263,60 +281,62 @@ export default [
   [
     {
       label: 'caps lock',
-      size: 1.9,
+      size: 2.1,
       keyCode: 224,
-      location: 1
+      location: 1,
+      align: 'left',
+      font: 'small'
     },
     {
-      label: 'a',
+      label: 'A',
       size: 1,
       keyCode: 65,
       location: 0
     },
     {
-      label: 's',
+      label: 'S',
       size: 1,
       keyCode: 83,
       location: 0
     },
     {
-      label: 'd',
+      label: 'D',
       size: 1,
       keyCode: 68,
       location: 0
     },
     {
-      label: 'f',
+      label: 'F',
       size: 1,
       keyCode: 70,
       location: 0
     },
     {
-      label: 'g',
+      label: 'G',
       size: 1,
       keyCode: 71,
       location: 0
     },
     {
-      label: 'h',
+      label: 'H',
       size: 1,
       keyCode: 72,
       location: 0
     },
     {
-      label: 'j',
+      label: 'J',
       size: 1,
       keyCode: 74,
       location: 0
     },
     {
-      label: 'k',
+      label: 'K',
       size: 1,
       keyCode: 75,
       location: 0
     },
     {
-      label: 'l',
+      label: 'L',
       size: 1,
       keyCode: 76,
       location: 0
@@ -337,7 +357,9 @@ export default [
       label: 'return',
       size: 2.2,
       keyCode: 13,
-      location: 0
+      location: 0,
+      align: 'right',
+      font: 'small'
     },
   ],
   // zxcvb
@@ -346,46 +368,48 @@ export default [
       label: 'shift',
       size: 2.25,
       keyCode: 16,
-      location: 1
+      location: 1,
+      align: 'left',
+      font: 'small'
     },
     {
-      label: 'z',
+      label: 'Z',
       size: 1,
       keyCode: 90,
       location: 0
     },
     {
-      label: 'x',
+      label: 'X',
       size: 1,
       keyCode: 88,
       location: 0
     },
     {
-      label: 'c',
+      label: 'C',
       size: 1,
       keyCode: 67,
       location: 0
     },
     {
-      label: 'v',
+      label: 'V',
       size: 1,
       keyCode: 86,
       location: 0
     },
     {
-      label: 'b',
+      label: 'B',
       size: 1,
       keyCode: 66,
       location: 0
     },
     {
-      label: 'n',
+      label: 'N',
       size: 1,
       keyCode: 78,
       location: 0
     },
     {
-      label: 'm',
+      label: 'M',
       size: 1,
       keyCode: 77,
       location: 0
@@ -406,7 +430,9 @@ export default [
       label: 'shift',
       size: 2.3,
       keyCode: 16,
-      location: 2
+      location: 2,
+      align: 'right',
+      font: 'small'
     },
   ],
   // bottom row
@@ -415,25 +441,33 @@ export default [
       label: 'fn',
       size: .8,
       keyCode: null,
-      location: 0
+      location: 0,
+      align: 'left',
+      font: 'small'
     },
     {
       label: 'control',
       size: .8,
       keyCode: 17,
-      location: 1
+      location: 1,
+      align: 'right',
+      font: 'small'
     },
     {
       label: 'option',
       size: 1,
       keyCode: 18,
-      location: 1
+      location: 1,
+      align: 'right',
+      font: 'small'
     },
     {
       label: 'command',
       size: 1.2,
       keyCode: 224,
-      location: 1
+      location: 1,
+      align: 'right',
+      font: 'small'
     },
     {
       label: '',
@@ -445,35 +479,44 @@ export default [
       label: 'command',
       size: 1.2,
       keyCode: 224,
-      location: 2
+      location: 2,
+      align: 'left',
+      font: 'small'
     },
     {
       label: 'option',
       size: 1,
       keyCode: 18,
-      location: 2
+      location: 2,
+      align: 'left',
+      font: 'small'
     },
     {
       label: '◀',
-      size: .8,
+      size: 1,
       keyCode: 37,
       location: 0
     },
     {
-      label: '▲',
-      size: .4,
-      keyCode: 38,
-      location: 0
-    },
-    {
-      label: '▼',
-      size: .4,
-      keyCode: 40,
-      location: 0
+      isStacked: true,
+      keys: [
+        {
+          label: '▲',
+          size: 1,
+          keyCode: 38,
+          location: 0
+        },
+        {
+          label: '▼',
+          size: 1,
+          keyCode: 40,
+          location: 0
+        },
+      ]
     },
     {
       label: '▶',
-      size: .8,
+      size: 1,
       keyCode: 39,
       location: 0
     },

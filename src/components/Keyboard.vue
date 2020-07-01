@@ -3,12 +3,11 @@
     <KeyboardRow
       v-for="(row, index) in keyboardMap"
       :key="index">
-      <Key
+      <component
         v-for="(key, idx) in row"
+        :is="key.isStacked ? 'StackedKeys' : 'Key'"
         :key="idx"
-        :meta="key">
-        {{ key.label }}
-      </Key>
+        :meta="key" />
     </KeyboardRow>
   </div>
 </template>
@@ -16,13 +15,15 @@
 <script>
 import KeyboardRow from './KeyboardRow.vue'
 import Key from './Key.vue'
+import StackedKeys from './StackedKeys.vue'
 import keyInfo from '../keyInfo'
 
 export default {
   name: 'Keyboard',
   components: {
     KeyboardRow,
-    Key
+    Key,
+    StackedKeys
   },
   data() {
     return {
