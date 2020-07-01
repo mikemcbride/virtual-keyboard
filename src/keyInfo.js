@@ -396,7 +396,7 @@ export default [
     {
       label: 'command',
       size: 1.2,
-      code: 'OSLeft',
+      code: ['OSLeft', 'MetaLeft'],
       align: 'right',
       font: 'small'
     },
@@ -408,7 +408,7 @@ export default [
     {
       label: 'command',
       size: 1.2,
-      code: 'OSRight',
+      code: ['OSRight', 'MetaRight'],
       align: 'left',
       font: 'small'
     },

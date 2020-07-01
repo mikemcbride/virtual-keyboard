@@ -48,6 +48,9 @@ export default {
       return `flex-basis: 0; flex-grow: ${this.meta.size}`
     },
     isPressed() {
+      if (Array.isArray(this.meta.code)) {
+        return this.meta.code.some(code => this.pressed.has(code))
+      }
       return this.pressed.has(this.meta.code)
     }
   }
