@@ -1,7 +1,6 @@
 <template>
   <div
-    v-if="!meta.isStacked"
-    class="shadow border-2 flex flex-col"
+    class="shadow border-2 flex flex-col mx-1"
     :class="{
       'h-12': !stacked,
       'h-6': stacked,
@@ -57,12 +56,12 @@ export default {
   },
   methods: {
     handleKeypress(e) {
-      if (e.keyCode === this.meta.keyCode && e.location === this.meta.location) {
+      if (e.code === this.meta.code) {
         this.isPressed = true
       }
     },
     handleKeyup(e) {
-      if (e.keyCode === this.meta.keyCode && e.location === this.meta.location) {
+      if (e.code === this.meta.code) {
         this.isPressed = false
       }
     }
