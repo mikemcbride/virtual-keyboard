@@ -28,17 +28,6 @@ export default {
     return {
       keyboardMap: keyInfo
     }
-  },
-  created() {
-    window.addEventListener('keydown', this.handleKeypress)
-  },
-  destroyed() {
-    window.removeEventListener('keydown', this.handleKeypress)
-  },
-  methods: {
-    handleKeypress(e) {
-      console.log('key pressed:', { keyCode: e.keyCode, location: e.location })
-    }
   }
 }
 </script>
