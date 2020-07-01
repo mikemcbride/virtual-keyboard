@@ -42,6 +42,7 @@ export default {
   },
   methods: {
     handleKeypress(e) {
+      console.log(e.code)
       this.pressedKeys.add(e.code)
     },
     handleKeyup(e) {
