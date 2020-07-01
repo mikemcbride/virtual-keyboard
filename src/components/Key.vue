@@ -15,7 +15,11 @@
       'text-center justify-center': !meta.align
      }"
     :style="computedWidth">
-    <span class="px-1" :class="{ 'pb-1': meta.align }">{{ meta.label }}</span>
+    <span class="px-1" :class="{ 'pb-1': meta.align }" v-if="meta.label">{{ meta.label }}</span>
+    <span class="px-1 flex flex-col" v-if="meta.labels">
+      <span class="text-xs">{{ meta.labels[0] }}</span>
+      <span class="text-base">{{ meta.labels[1] }}</span>
+    </span>
   </div>
 </template>
 

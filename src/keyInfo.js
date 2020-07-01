@@ -84,67 +84,67 @@ export default [
   // numeric keys
   [
     {
-      label: '`',
+      labels: ['~', '`'],
       size: 1,
       code: 'Backquote',
     },
     {
-      label: '1',
+      labels: ['!', '1'],
       size: 1,
       code: 'Digit1',
     },
     {
-      label: '2',
+      labels: ['@', '2'],
       size: 1,
       code: 'Digit2',
     },
     {
-      label: '3',
+      labels: ['#', '3'],
       size: 1,
       code: 'Digit3',
     },
     {
-      label: '4',
+      labels: ['$', '4'],
       size: 1,
       code: 'Digit4',
     },
     {
-      label: '5',
+      labels: ['%', '5'],
       size: 1,
       code: 'Digit5',
     },
     {
-      label: '6',
+      labels: ['^', '6'],
       size: 1,
       code: 'Digit6',
     },
     {
-      label: '7',
+      labels: ['&', '7'],
       size: 1,
       code: 'Digit7',
     },
     {
-      label: '8',
+      labels: ['*', '8'],
       size: 1,
       code: 'Digit8',
     },
     {
-      label: '9',
+      labels: ['(', '9'],
       size: 1,
       code: 'Digit9',
     },
     {
-      label: '0',
+      labels: [')', '0'],
       size: 1,
       code: 'Digit0',
     },
     {
-      label: '-',
+      labels: ['_', '-'],
       size: 1,
       code: 'Minus',
     },
     {
-      label: '=',
+      labels: ['+', '='],
       size: 1,
       code: 'Equal',
     },
@@ -216,17 +216,17 @@ export default [
       code: 'KeyP',
     },
     {
-      label: '[',
+      labels: ['{', '['],
       size: 1,
       code: 'BracketLeft',
     },
     {
-      label: ']',
+      labels: ['}', ']'],
       size: 1,
       code: 'BracketRight',
     },
     {
-      label: '\\',
+      labels: ['|', '\\'],
       size: 1,
       code: 'Backslash',
     },
@@ -286,12 +286,12 @@ export default [
       code: 'KeyL',
     },
     {
-      label: ';',
+      labels: [':', ';'],
       size: 1,
       code: 'Semicolon',
     },
     {
-      label: `'`,
+      labels: ['"', `'`],
       size: 1,
       code: 'Quote',
     },
@@ -348,17 +348,17 @@ export default [
       code: 'KeyM',
     },
     {
-      label: ',',
+      labels: ['<', ','],
       size: 1,
       code: 'Comma',
     },
     {
-      label: '.',
+      labels: ['>', '.'],
       size: 1,
       code: 'Period',
     },
     {
-      label: '/',
+      labels: ['?', '/'],
       size: 1,
       code: 'Slash',
     },
