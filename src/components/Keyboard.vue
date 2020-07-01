@@ -7,6 +7,7 @@
         v-for="(key, idx) in row"
         :is="key.isStacked ? 'StackedKeys' : 'Key'"
         :key="idx"
+        :pressed="pressedKeys"
         :meta="key" />
     </KeyboardRow>
   </div>
@@ -27,7 +28,24 @@ export default {
   },
   data() {
     return {
-      keyboardMap: keyInfo
+      keyboardMap: keyInfo,
+      pressedKeys: new Set()
+    }
+  },
+  created() {
+    window.addEventListener('keydown', this.handleKeypress)
+    window.addEventListener('keyup', this.handleKeyup)
+  },
+  destroyed() {
+    window.removeEventListener('keydown', this.handleKeypress)
+    window.removeEventListener('keyup', this.handleKeyup)
+  },
+  methods: {
+    handleKeypress(e) {
+      this.pressedKeys.add(e.code)
+    },
+    handleKeyup(e) {
+      this.pressedKeys.delete(e.code)
     }
   }
 }

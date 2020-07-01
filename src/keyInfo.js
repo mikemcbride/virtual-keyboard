@@ -1,8 +1,3 @@
-// This file exports a config that maps a bunch of info about the keyboard.
-// It exports an array of rows for the keyboard.
-// Each row contains an array of keys.
-// Keys have a label and a shiftLabel to govern how the key will display in the UI.
-// It has info about the keyCode that maps to the key.
 export default [
   // function keys
   [
@@ -302,7 +297,7 @@ export default [
     },
     {
       label: 'return',
-      size: 2.2,
+      size: 2,
       code: 'Enter',
       align: 'right',
       font: 'small'
@@ -363,6 +358,11 @@ export default [
       code: 'Period',
     },
     {
+      label: '/',
+      size: 1,
+      code: 'Slash',
+    },
+    {
       label: 'shift',
       size: 2.3,
       code: 'ShiftRight',
@@ -374,14 +374,14 @@ export default [
   [
     {
       label: 'fn',
-      size: .8,
+      size: 1,
       code: null,
       align: 'left',
       font: 'small'
     },
     {
       label: 'control',
-      size: .8,
+      size: 1,
       code: 'ControlLeft',
       align: 'right',
       font: 'small'
@@ -402,7 +402,7 @@ export default [
     },
     {
       label: '',
-      size: 6.5,
+      size: 6,
       code: 'Space',
     },
     {
@@ -421,7 +421,7 @@ export default [
     },
     {
       label: '◀',
-      size: .8,
+      size: 1,
       code: 'ArrowLeft',
     },
     {
@@ -441,7 +441,7 @@ export default [
     },
     {
       label: '▶',
-      size: .8,
+      size: 1,
       code: 'ArrowRight',
     },
   ]

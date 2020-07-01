@@ -27,6 +27,9 @@ export default {
       type: Object,
       required: true
     },
+    pressed: {
+      required: true
+    },
     stacked: {
       type: Boolean,
       default: false
@@ -40,30 +43,8 @@ export default {
     computedWidth() {
       return `flex-basis: 0; flex-grow: ${this.meta.size}`
     },
-  },
-  data() {
-    return {
-      isPressed: false
-    }
-  },
-  created() {
-    window.addEventListener('keydown', this.handleKeypress)
-    window.addEventListener('keyup', this.handleKeyup)
-  },
-  destroyed() {
-    window.removeEventListener('keydown', this.handleKeypress)
-    window.removeEventListener('keyup', this.handleKeyup)
-  },
-  methods: {
-    handleKeypress(e) {
-      if (e.code === this.meta.code) {
-        this.isPressed = true
-      }
-    },
-    handleKeyup(e) {
-      if (e.code === this.meta.code) {
-        this.isPressed = false
-      }
+    isPressed() {
+      return this.pressed.has(this.meta.code)
     }
   }
 }
