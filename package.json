@@ -11,7 +11,6 @@
     "vue": "^3.0.0-beta.15"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@vue/compiler-sfc": "^3.0.0-beta.15",
     "vite": "^1.0.0-beta.3"
   }
