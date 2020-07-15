@@ -381,6 +381,7 @@ export default [
     },
     {
       label: 'control',
+      icon: 'IconControl',
       size: 1,
       code: 'ControlLeft',
       align: 'right',
@@ -388,6 +389,7 @@ export default [
     },
     {
       label: 'option',
+      icon: 'IconOption',
       size: 1,
       code: 'AltLeft',
       align: 'right',
@@ -395,6 +397,7 @@ export default [
     },
     {
       label: 'command',
+      icon: 'IconCommand',
       size: 1.2,
       code: ['OSLeft', 'MetaLeft'],
       align: 'right',
@@ -407,6 +410,7 @@ export default [
     },
     {
       label: 'command',
+      icon: 'IconCommand',
       size: 1.2,
       code: ['OSRight', 'MetaRight'],
       align: 'left',
@@ -414,6 +418,7 @@ export default [
     },
     {
       label: 'option',
+      icon: 'IconOption',
       size: 1,
       code: 'AltRight',
       align: 'left',

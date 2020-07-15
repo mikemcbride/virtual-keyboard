@@ -15,8 +15,11 @@
       'text-center justify-center': !meta.align
      }"
     :style="computedWidth">
-    <span class="px-1" :class="{ 'pb-1': meta.align }" v-if="meta.label">{{ meta.label }}</span>
-    <span class="px-1 flex flex-col" v-if="meta.labels">
+    <span class="p-3 inline-block w-full h-full" v-if="meta.icon">
+      <component :is="meta.icon" size="100%" />
+    </span>
+    <span class="px-1" :class="{ 'pb-1': meta.align }" v-else-if="meta.label">{{ meta.label }}</span>
+    <span class="px-1 flex flex-col" v-else-if="meta.labels">
       <span class="text-xs">{{ meta.labels[0] }}</span>
       <span class="text-base">{{ meta.labels[1] }}</span>
     </span>
@@ -24,6 +27,10 @@
 </template>
 
 <script>
+import IconCommand from './icons/IconCommand.vue'
+import IconControl from './icons/IconControl.vue'
+import IconOption from './icons/IconOption.vue'
+
 export default {
   name: 'Key',
   props: {
@@ -42,6 +49,11 @@ export default {
       type: String,
       default: 'all'
     }
+  },
+  components: {
+    IconCommand,
+    IconControl,
+    IconOption
   },
   computed: {
     computedWidth() {
